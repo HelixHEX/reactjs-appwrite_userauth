@@ -25,7 +25,9 @@ class Login extends React.Component{
     this.auth.login(email, password)
   }
 
-  
+  componentDidMount() {
+    this.auth.checkLogin()
+  }
 
   render() {
     return (

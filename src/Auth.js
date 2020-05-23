@@ -78,7 +78,14 @@ class Auth {
     this.authenticated = val;
   }
 
-
+  checkLogin() {
+    this.sdk.account.get().then(function(response) {
+      console.log(response)
+      window.location="http://localhost:3000/"
+    }, function(error) {
+      console.log(error)
+    })
+  }
 
   getAuthenticated() {
     return this.checkAuthenticated();
