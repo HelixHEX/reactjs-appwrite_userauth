@@ -48,10 +48,10 @@ class Auth {
   }
 
   logout() {
-    let promise = this.sdk.account.deleteSessions();
+    let promise = this.sdk.account.deleteSession('current');
 
     promise.then(function (response) {
-      localStorage.removeItem('auth_token');
+      localStorage.removeItem('auth_state');
       window.location='http://localhost:3000/signin'
       console.log(response); // Success
     }, function (error) {
@@ -64,11 +64,11 @@ class Auth {
     const promise = this.sdk.account.getSessions();
     return promise.then(
         function(response) {
-          localStorage.setItem('auth_token', 1);
+          localStorage.setItem('auth_state', 1);
           return response;
         },
         function(error) {
-          localStorage.removeItem('auth_token');
+          localStorage.removeItem('auth_state');
           return null;
         }
     );
@@ -77,6 +77,8 @@ class Auth {
   setAuthenticated(val) {
     this.authenticated = val;
   }
+
+
 
   getAuthenticated() {
     return this.checkAuthenticated();
