@@ -27,6 +27,10 @@ export default class Signup extends React.Component{
     }
   }
 
+  handleGoogle = () => {
+    this.auth.google()
+  }
+
   render() {
     return (
       <>
@@ -75,6 +79,12 @@ export default class Signup extends React.Component{
       					<div className="container-login100-form-btn">
       						<button type="submit" className="login100-form-btn">
       							Signup
+      						</button>
+      					</div>
+
+                <div className="container-login100-form-btn">
+      						<button onClick={this.handleGoogle} type="button" className="login100-google-form-btn">
+      							Login With Google
       						</button>
       					</div>
 
