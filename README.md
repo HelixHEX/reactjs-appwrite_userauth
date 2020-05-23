@@ -4,6 +4,7 @@
 * This is a simple web application for user authentication
 * It uses React.js as the front end
 * It uses Appwrite as the backend
+* Here is the Medium tutorial to learn how it was built -> https://medium.com/@e.wambugu192/user-authentication-with-react-js-and-appwrite-30c9096e92b2
 
 ## Screenshots 
 
