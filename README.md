@@ -14,6 +14,9 @@
 ### Signup Page 
 ![Screen Shot 2020-05-22 at 1 38 40 AM](https://user-images.githubusercontent.com/25518600/82716109-e7085600-9c63-11ea-8c1d-3d1798e303c4.png)
 
+### Home Page
+![Screen Shot 2020-05-23 at 2 03 52 AM](https://user-images.githubusercontent.com/25518600/82723135-92340200-9c9a-11ea-986a-837dcf96f4fd.png)
+
 ## How to run
 * Clone this project
 * Run ```npm install``` to install packages
